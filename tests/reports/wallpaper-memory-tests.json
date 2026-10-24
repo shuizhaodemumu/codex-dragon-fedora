@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": [
+    "Install 0",
+    "Configure 1",
+    "Critical before attach creates no Blob",
+    "Critical before attach does not load decoder",
+    "Critical attach retains file session",
+    "Attach resolves as suspended",
+    "No decoder deadline while suspended",
+    "No duplicate attach",
+    "Reveal while critical stays suspended",
+    "Fresh recovered first frame",
+    "One source after pressure recovery",
+    "Visible decoder releases on critical",
+    "Released Blob count",
+    "Manual pause prevents pressure wake",
+    "Manual pause preserved",
+    "Resume uses fresh generation",
+    "Disable leaves no stage",
+    "All allocated sources released",
+    "Install 18",
+    "Configure 19",
+    "In-flight prepare safely hibernates",
+    "In-flight prepare later resolves"
+  ],
+  "networkBlocked": true,
+  "actualCodexStarted": false,
+  "pressureSimulated": true,
+  "sourceSha256": "591189e05f310fdd4959aff1568241b61d47e2bf303187a31f97d939a1c597a1"
+}

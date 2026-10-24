@@ -1,0 +1,15 @@
+[package]
+name = "codex-dragon"
+version = "0.2.0"
+edition = "2021"
+description = "Fedora startup animation launcher for Codex"
+
+[dependencies]
+libc = "0.2"
+serde_json = "1"
+base64 = "0.22"
+
+[profile.release]
+lto = true
+strip = true
+panic = "abort"

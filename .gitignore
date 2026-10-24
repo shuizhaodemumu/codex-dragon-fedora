@@ -1,0 +1,12 @@
+/target/
+/assets/
+/test-output/
+/work/
+/outputs/
+__pycache__/
+*.tar.gz
+*.zip
+*.log
+.env
+.env.*
+.codex/

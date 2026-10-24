@@ -1,0 +1,10 @@
+/* Linux-specific tear / ripple reveal; added and removed with the wallpaper. */
+#codex-dragon-stage-v1 .codex-dragon-tear,
+#codex-dragon-stage-v1 .codex-dragon-ripple { position:absolute;pointer-events:none;opacity:0; }
+#codex-dragon-stage-v1 .codex-dragon-tear { right:25%;top:38%;width:8px;height:13px;border-radius:70% 30% 65% 35%;background:linear-gradient(135deg,#e6fbffbb,#91d4f433);box-shadow:0 0 12px #c7f5ff44; }
+#codex-dragon-stage-v1 .codex-dragon-ripple { right:calc(25% - 16px);top:65%;width:40px;height:20px;border:1px solid #caf3ff88;border-radius:50%; }
+#codex-dragon-stage-v1[data-ready="true"] .codex-dragon-tear {animation:codex-dragon-tear-linux 1.3s ease-in both;}
+#codex-dragon-stage-v1[data-ready="true"] .codex-dragon-ripple {animation:codex-dragon-ripple-linux 1.6s .85s ease-out both;}
+@keyframes codex-dragon-tear-linux {0%{opacity:0;transform:translateY(-10px) scale(.4)}25%{opacity:.65}80%{opacity:.4}100%{opacity:0;transform:translateY(26vh) scale(.7)}}
+@keyframes codex-dragon-ripple-linux {0%{opacity:0;transform:scale(.1)}15%{opacity:.5}100%{opacity:0;transform:scale(16)}}
+@media(prefers-reduced-motion:reduce){#codex-dragon-stage-v1 .codex-dragon-tear,#codex-dragon-stage-v1 .codex-dragon-ripple{display:none}}
